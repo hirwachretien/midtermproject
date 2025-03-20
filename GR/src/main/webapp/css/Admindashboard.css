@@ -1,0 +1,181 @@
+/* Main layout and sidebar styles */
+.sidebar {
+    min-height: 100vh;
+    background-color: #343a40;
+    color: white;
+}
+
+.sidebar a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateX(5px);
+}
+
+.sidebar .active {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border-left: 4px solid #4e73df;
+}
+
+/* Card styles */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+/* Stats card styles */
+.stats-card {
+    border-left: 5px solid;
+}
+
+.stats-card.employees {
+    border-left-color: #4e73df;
+}
+
+.stats-card.departments {
+    border-left-color: #1cc88a;
+}
+
+.stats-card.new-hires {
+    border-left-color: #36b9cc;
+}
+
+.stats-card.users {
+    border-left-color: #f6c23e;
+}
+
+/* Table styles */
+.table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+.table td, .table th {
+    padding: 12px;
+    vertical-align: middle;
+}
+
+/* Button styles */
+.btn-sm {
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    margin: 0 2px;
+}
+
+.btn-primary {
+    background-color: #4e73df;
+    border-color: #4e73df;
+}
+
+.btn-primary:hover {
+    background-color: #2e59d9;
+    border-color: #2e59d9;
+}
+
+.btn-danger {
+    background-color: #e74a3b;
+    border-color: #e74a3b;
+}
+
+.btn-danger:hover {
+    background-color: #be3d31;
+    border-color: #be3d31;
+}
+
+/* Modal styles */
+.modal-content {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    padding: 1rem;
+}
+
+.modal-body {
+    padding: 1.25rem;
+}
+
+.modal-footer {
+    padding: 1rem;
+    border-top: 1px solid #e9ecef;
+}
+
+/* Form styles */
+.form-control {
+    border-radius: 5px;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+    border-color: #4e73df;
+    box-shadow: 0 0 0 0.25rem rgba(78, 115, 223, 0.25);
+}
+
+.form-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        min-height: auto;
+    }
+
+    .stats-card {
+        margin-bottom: 15px;
+    }
+}
+
+/* Animation for new elements */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
